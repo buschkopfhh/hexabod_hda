@@ -1,5 +1,6 @@
 ﻿/*Begining of Auto generated code by Atmel studio */
 #include <Arduino.h>
+#include <HardwareSerial.h>
 
 /*End of auto generated code by Atmel studio */
 
@@ -8,11 +9,22 @@ char data = 0;
 
 
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
-  pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(13, OUTPUT);
+	// initialize digital pin LED_BUILTIN as an output.
+	pinMode(LED_BUILTIN, OUTPUT);
+	pinMode(12, OUTPUT);
 
-  Serial.begin(9600);         //Sets the data rate in bits per second (baud) for serial data transmission
+	Serial.begin(9600);         //Sets the data rate in bits per second (baud) for serial data transmission
+	Serial.println("This is the arduino for Hexapod!!!");
+	Serial.println(" ");
+	Serial.println("To connect, start the LED Controller App on your Smartphone");
+	Serial.println("and connect to Bluetooth HC-05");
+
+	
+	digitalWrite(LED_BUILTIN, HIGH); 
+
+	
+	
+	
 
 
   
@@ -23,16 +35,17 @@ void setup() {
 void loop() {
 int i;
 if(Serial.available() > 0){ // Checks whether data is comming from the serial port
-    
-    
+
     data = Serial.read();   // Reads the data from the serial port
   // data = 0;
-    Serial.print(data);        //Print Value inside data in Serial monitor
-    Serial.print("\n");        //New line 
+    Serial.println(data);        //Print Value inside data in Serial monitor
     
  if(data == '1')            //Checks whether value of data is equal to 1
+	{
+	digitalWrite(12, HIGH);
+	Serial.println("LED is ON");
 	
-	digitalWrite(13, HIGH);
+	}
 	/*for(i=0; i<10; i++) {
 		digitalWrite(13, HIGH);  //If value is 1 then LED turns ON
 		delay(50);
@@ -40,7 +53,10 @@ if(Serial.available() > 0){ // Checks whether data is comming from the serial po
 		delay(50);
 	}*/
   else if(data == '0')       //Checks whether value of data is equal to 0
-    digitalWrite(13, LOW);   //If value is 0 then LED turns OFF
-
+    {
+	digitalWrite(12, LOW);   //If value is 0 then LED turns OFF
+ //   digitalWrite(LED_BUILTIN, LOW);
+ 	Serial.println("LED is OFF");
+	}
 	}
 }
