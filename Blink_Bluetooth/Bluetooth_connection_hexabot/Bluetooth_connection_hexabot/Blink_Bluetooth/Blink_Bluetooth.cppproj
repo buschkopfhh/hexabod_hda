@@ -210,6 +210,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="BluetoothInterface.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="BluetoothInterface.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Sketch.cpp">
       <SubType>compile</SubType>
     </Compile>

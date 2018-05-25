@@ -37,6 +37,7 @@ SUBDIRS :=
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
+../BluetoothInterface.cpp \
 ../Sketch.cpp
 
 
@@ -47,15 +48,19 @@ ASM_SRCS +=
 
 
 OBJS +=  \
+BluetoothInterface.o \
 Sketch.o
 
 OBJS_AS_ARGS +=  \
+BluetoothInterface.o \
 Sketch.o
 
 C_DEPS +=  \
+BluetoothInterface.d \
 Sketch.d
 
 C_DEPS_AS_ARGS +=  \
+BluetoothInterface.d \
 Sketch.d
 
 OUTPUT_FILE_PATH +=Blink_Bluetooth.elf
@@ -73,6 +78,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 
