@@ -8,15 +8,16 @@
 
 // the setup function runs once when you press reset or power the board
 
-int count = 0;
+//int count = 0;
 int servoAngle1 = 0;
 int servoAngle2 = 0;
 int servoAngle3 = 0;
 int param = 10;
 
-/*
-int calcAngle(int appValue)
+
+int Angle(char tempappValue)
 {
+	int appValue = (int) tempappValue;
 	appValue = appValue*param;
 	
 	Serial.println(appValue);
@@ -24,7 +25,7 @@ int calcAngle(int appValue)
 	
 		
 }
-*/
+
 
 void setup() {
 	// initialize digital pin LED_BUILTIN as an output.
@@ -37,7 +38,7 @@ void setup() {
 	Serial.println("To connect, start the LED Controller App on your Smartphone");
 	Serial.println("and connect to Bluetooth HC-05");
 
-
+	//int count = 0;
 //	BluetoothInterface to;
 //	to:BluetoothInterface();	
 	digitalWrite(LED_BUILTIN, HIGH); 
@@ -49,7 +50,7 @@ void setup() {
 void loop() {
 	
 	
-	
+/*	
 	BluetoothInterface to;
 	to.readInput();
 	
@@ -61,73 +62,89 @@ void loop() {
 	Serial.print(servoAngle1);
 	Serial.print(servoAngle2);
 	Serial.println(servoAngle3);
-	delay(1000);
-	
-}
 
-
-
-
-	/*
+	*/
+	/*char lotto[7];
 	int i;
-		for (i=0; i<7; i++)
-	{
-		if(Serial.available() > 0)
+	int k;
+	for (i=0; i<7; i++)
 		{
-			lotto[count] = Serial.read();
-			count++;		
+			if(Serial.available() > 0)
+			{
+				lotto[count] = Serial.read();
+				count++;		
 			
-		}
-		if(count == 7)
-		{
-			Serial.println("Reading successful"); 
-			for(i=0; i<7; i++){
-			Serial.print(lotto[i]);
-		}
+			}
+			if(count == 7)
+		
+			{
+				Serial.println("Reading successful"); 
+				for(k=0; k<7; k++){
+					Serial.print(lotto[k]);
+				}
 		Serial.println();
 		
 		count = 0;
 		
-	servoAngle1 = calcAngle(lotto[1]);
+/*	servoAngle1 = calcAngle(lotto[1]);
 	servoAngle2 = calcAngle(lotto[3]);
 	servoAngle3 = calcAngle(lotto[5]);
 	
 	Serial.print("Angle of servo 1 = ");
 	Serial.println(servoAngle1);
-		
+	
+		}
+
 	}
-	
-	
-	
-	
-	
-	
-	}
-	
-	
 }
 
+	*/
 
 
 
-
-
-
-/*
-if(Serial.available() > 0){ // Checks whether data is coming from the serial port
+ // Checks whether data is coming from the serial port
 	//data = Serial.read();  // Reads the data from the serial port
-	lotto[count] = Serial.read();
-	count++;
-	if(count == 6)
-	{
-		Serial.println("fuck this shit");
-		for(i=0; i<6; i++){
-			Serial.print(lotto[i]);
-		}
-		Serial.println();
-		
-		count = 0;	
+	char lotto;
+	int count = 0;
+	int k;
+	
+	if(Serial.available() > 0){
+	lotto = Serial.read();
+	Serial.println(lotto);
+	int itt = (int) lotto - '0';
+	Serial.println(itt);
 	}
+	
+	
+// 	for(k=0;k<7;k++){
+// 		if(Serial.available() > 0){
+// 				lotto[count] = Serial.read();
+// 				Serial.println(Angle(lotto[count]));
+// 				Serial.print("debug k: "); // k is hier zufällig, deshalb zählt count nicht hoch
+// 				Serial.println(k);
+// 				Serial.println(lotto[count]);
+// 				Serial.print("debug count: ");
+// 				Serial.println(count);
+// 				count++;
+// 			
+// 		}
+// 	}
+// 		if(count == 6){
+// 			Serial.println("yes it runs");
+// 			int i;
+// 			for(i=0; i<7; i++){
+// 				Serial.print(lotto[i]);
+// 			}
+// 				//	Serial.println();
+// 				
+// 				//count = 0;
+// 			
+// 	}
+	
+
+
+
+}
 	
   // data = 0;
 	//char type;
@@ -154,13 +171,3 @@ if(Serial.available() > 0){ // Checks whether data is coming from the serial por
 	 
 	
 	 */
-	 
-	 
-	 
-
-	/*for(i=0; i<10; i++) {
-		digitalWrite(13, HIGH);  //If value is 1 then LED turns ON
-		delay(50);
-		digitalWrite(13, LOW);
-		delay(50);
-	}*/
