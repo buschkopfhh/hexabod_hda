@@ -104,15 +104,60 @@ void loop() {
 
  // Checks whether data is coming from the serial port
 	//data = Serial.read();  // Reads the data from the serial port
-	char lotto;
+	char servo1;
+	char servo2;
+	char servo3;
+	int serv1;
+	int serv2;
+	int serv3;
+	char data;
 	int count = 0;
 	int k;
 	
 	if(Serial.available() > 0){
-	lotto = Serial.read();
-	Serial.println(lotto);
-	int itt = (int) lotto - '0';
-	Serial.println(itt);
+	data = Serial.read();
+	Serial.println(data);
+	switch (data)
+	{
+		case 'A':
+			servo1 = Serial.read();
+			serv1 = (int) data -'0';
+			Serial.print("Servo 1 value: ");
+			Serial.println(serv1);
+			break;
+			
+		case 'B':
+			servo2 = Serial.read();
+			serv2 = (int) data -'0';
+			Serial.print("Servo 2 value: ");
+			Serial.println(serv2);
+			break;
+			
+		case 'C':
+			servo3 = Serial.read();
+			serv3 = (int) data -'0';
+			Serial.print("Servo 3 value: ");
+			Serial.println(serv3);		
+			break;
+			
+		case '#':
+			Serial.print("The values are \nS1= ");
+			Serial.println(serv1);
+			Serial.print("S2= ");
+			Serial.println(serv2);
+			Serial.print("S3= ");
+			Serial.println(serv3);
+			break;
+		
+		default:
+			Serial.println("default");		
+		
+	}
+	
+	
+	
+	//int itt = (int) data - '0';
+	//Serial.println(itt);
 	}
 	
 	
