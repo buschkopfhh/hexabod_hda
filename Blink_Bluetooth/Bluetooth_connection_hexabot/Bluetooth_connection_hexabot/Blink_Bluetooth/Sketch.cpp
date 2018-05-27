@@ -13,6 +13,7 @@ int servoAngle1 = 0;
 int servoAngle2 = 0;
 int servoAngle3 = 0;
 int param = 10;
+int count = 0;
 
 
 int Angle(char tempappValue)
@@ -24,6 +25,13 @@ int Angle(char tempappValue)
 	return appValue;
 	
 		
+}
+
+int int2char(char temp)
+{
+	int integer = (int) temp - '0';
+	return integer;
+	
 }
 
 
@@ -111,48 +119,105 @@ void loop() {
 	int serv2;
 	int serv3;
 	char data;
-	int count = 0;
+
 	int k;
 	
 	if(Serial.available() > 0){
-	data = Serial.read();
-	Serial.println(data);
-	switch (data)
-	{
-		case 'A':
-			servo1 = Serial.read();
-			serv1 = (int) data -'0';
-			Serial.print("Servo 1 value: ");
-			Serial.println(serv1);
-			break;
+		data = Serial.read();
+		Serial.println(data);
+		Serial.print("Count: ");
+		Serial.println(count);
+		switch (count)
+		{
+			case 0:
+				if(data == 'A'){
+					count++;
+					Serial.println("data = A");
+				}
+				else{
+					Serial.println("Arsch 1");
+				}
+					
+				break;
 			
-		case 'B':
-			servo2 = Serial.read();
-			serv2 = (int) data -'0';
-			Serial.print("Servo 2 value: ");
-			Serial.println(serv2);
-			break;
-			
-		case 'C':
-			servo3 = Serial.read();
-			serv3 = (int) data -'0';
-			Serial.print("Servo 3 value: ");
-			Serial.println(serv3);		
-			break;
-			
-		case '#':
-			Serial.print("The values are \nS1= ");
-			Serial.println(serv1);
-			Serial.print("S2= ");
-			Serial.println(serv2);
-			Serial.print("S3= ");
-			Serial.println(serv3);
-			break;
+			case 1:
+				if(int2char(data) >= 0 && int2char(data) < 10){
+					servo1 = data;
+					count++;
+					Serial.print("Servo1 = ");
+					Serial.println(servo1);
+				}
+				else{
+					Serial.println("Arsch 2");
+				}
+				
+				break;
+				
+			case 2:
+				if(data == 'B'){
+					count++;
+					Serial.println("data = B");
+				}
+				else{
+					Serial.println("Arsch 3");
+				}
+				
+				break;
+				
+			case 3:
+				if(int2char(data) >= 0 && int2char(data) < 10){
+					servo2 = data;
+					count++;
+					Serial.print("Servo2 = ");
+					Serial.println(servo2);
+				}
+				else{
+					Serial.println("Arsch 4");
+				}
+				
+				break;
+						
+			case 4:
+				if(data == 'C'){
+					count++;
+					Serial.println("data = C");
+				}
+				else{
+					Serial.println("Arsch 5");
+				}
+									
+				break;
+									
+			case 5:
+				if(int2char(data) >= 0 && int2char(data) < 10){
+					servo3 = data;
+					count++;
+					Serial.print("Servo3 = ");
+					Serial.println(servo3);
+				}
+				else{
+					Serial.println("Arsch 6");
+				}
+									
+				break;
 		
-		default:
-			Serial.println("default");		
+			case 6:
+				if(data == '#'){
+					count = 0;
+				}
+				else{
+					Serial.println("Arsch 7");
+				}
+				
+				break;
+				
+						
+					
+			
+			default:
+				Serial.println("default");		
 		
-	}
+		}
 	
 	
 	
