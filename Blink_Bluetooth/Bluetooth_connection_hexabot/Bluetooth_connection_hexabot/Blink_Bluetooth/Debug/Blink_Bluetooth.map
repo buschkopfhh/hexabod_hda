@@ -11,7 +11,7 @@ C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Deb
 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
                               C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o) (_ZN5Print5writeEPKhj)
 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                              C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o) (init)
+                              BluetoothInterface.o (delay)
 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
                               BluetoothInterface.o (pinMode)
 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(abi.o)
@@ -61,11 +61,11 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
                               C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
-                              BluetoothInterface.o (__tablejump2__)
+                              C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o) (__tablejump2__)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
                               BluetoothInterface.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
-                              Sketch.o (__do_clear_bss)
+                              C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o) (__do_clear_bss)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_ctors.o)
                               C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o) (__do_global_ctors)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libc.a(abort.o)
@@ -78,8 +78,6 @@ Discarded input sections
  .text          0x00000000        0x0 BluetoothInterface.o
  .data          0x00000000        0x0 BluetoothInterface.o
  .bss           0x00000000        0x0 BluetoothInterface.o
- .text._ZN18BluetoothInterfaceC2Ev
-                0x00000000       0x30 BluetoothInterface.o
  .text._ZN18BluetoothInterface8int2charEc
                 0x00000000        0x8 BluetoothInterface.o
  .text._ZN18BluetoothInterface9calcAngleEi
@@ -90,38 +88,11 @@ Discarded input sections
                 0x00000000        0x8 BluetoothInterface.o
  .text._ZN18BluetoothInterface13getDirectionZEv
                 0x00000000        0x8 BluetoothInterface.o
- .text._ZN18BluetoothInterfaceD2Ev
-                0x00000000        0x2 BluetoothInterface.o
- .rodata.str1.1
-                0x00000000       0x7a BluetoothInterface.o
- .text._ZN18BluetoothInterface9readInputEv
-                0x00000000      0x13c BluetoothInterface.o
- .progmem.gcc_sw_table._ZN18BluetoothInterface9readInputEv
-                0x00000000        0xe BluetoothInterface.o
- .debug_info    0x00000000      0x7b6 BluetoothInterface.o
- .debug_abbrev  0x00000000      0x283 BluetoothInterface.o
- .debug_loc     0x00000000      0x2a9 BluetoothInterface.o
- .debug_aranges
-                0x00000000       0x58 BluetoothInterface.o
- .debug_ranges  0x00000000       0x48 BluetoothInterface.o
- .debug_line    0x00000000      0x35f BluetoothInterface.o
- .debug_str     0x00000000      0x61c BluetoothInterface.o
- .comment       0x00000000       0x31 BluetoothInterface.o
- .debug_frame   0x00000000       0xb8 BluetoothInterface.o
+ .text._ZN18BluetoothInterface5helloEv
+                0x00000000       0x1a BluetoothInterface.o
  .text          0x00000000        0x0 Sketch.o
  .data          0x00000000        0x0 Sketch.o
  .bss           0x00000000        0x0 Sketch.o
- .text._Z5Anglec
-                0x00000000       0x2c Sketch.o
- .text._Z8int2charc
-                0x00000000        0x6 Sketch.o
- .data.param    0x00000000        0x2 Sketch.o
- .bss.servoAngle3
-                0x00000000        0x2 Sketch.o
- .bss.servoAngle2
-                0x00000000        0x2 Sketch.o
- .bss.servoAngle1
-                0x00000000        0x2 Sketch.o
  .group         0x00000000        0x8 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
  .text          0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
  .data          0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
@@ -175,8 +146,6 @@ Discarded input sections
                 0x00000000       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnERK9Printable
                 0x00000000       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .text._ZN5Print11printNumberEmh
-                0x00000000       0x92 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print5printEmi
                 0x00000000       0x1a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print5printEhi
@@ -188,12 +157,6 @@ Discarded input sections
  .text._ZN5Print7printlnEji
                 0x00000000       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEmi
-                0x00000000       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .text._ZN5Print5printEli
-                0x00000000       0x90 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .text._ZN5Print5printEii
-                0x00000000        0xe C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .text._ZN5Print7printlnEii
                 0x00000000       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .text._ZN5Print7printlnEli
                 0x00000000       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
@@ -209,8 +172,6 @@ Discarded input sections
  .data          0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .bss           0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .text.millis   0x00000000       0x18 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .text.micros   0x00000000       0x4a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .text.delay    0x00000000       0x78 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .text.delayMicroseconds
                 0x00000000       0x16 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .text          0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
@@ -239,16 +200,6 @@ Discarded input sections
  .text          0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
  .data          0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
  .bss           0x00000000        0x0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .text.__empty  0x00000000        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_info    0x00000000       0x3e C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_abbrev  0x00000000       0x2a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_aranges
-                0x00000000       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_ranges  0x00000000       0x10 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_line    0x00000000       0x41 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_str     0x00000000      0x181 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .comment       0x00000000       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
- .debug_frame   0x00000000       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr6\libm.a(addsf3.o)
@@ -571,244 +522,271 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xd1c
+.text           0x00000000      0xfa0
  *(.vectors)
  .vectors       0x00000000       0xe4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
  *(.progmem.gcc*)
- .progmem.gcc_sw_table.loop
-                0x000000e4        0xe Sketch.o
  .progmem.gcc_sw_table.turnOffPWM
-                0x000000f2       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000116                . = ALIGN (0x2)
-                0x00000116                __trampolines_start = .
+                0x000000e4       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000108                . = ALIGN (0x2)
+                0x00000108                __trampolines_start = .
  *(.trampolines)
- .trampolines   0x00000116        0x0 linker stubs
+ .trampolines   0x00000108        0x0 linker stubs
  *(.trampolines*)
-                0x00000116                __trampolines_end = .
+                0x00000108                __trampolines_end = .
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
  .progmem.data.digital_pin_to_timer_PGM
-                0x00000116       0x46 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000116                digital_pin_to_timer_PGM
+                0x00000108       0x46 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000108                digital_pin_to_timer_PGM
  .progmem.data.digital_pin_to_bit_mask_PGM
-                0x0000015c       0x46 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x0000015c                digital_pin_to_bit_mask_PGM
+                0x0000014e       0x46 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x0000014e                digital_pin_to_bit_mask_PGM
  .progmem.data.digital_pin_to_port_PGM
-                0x000001a2       0x46 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000001a2                digital_pin_to_port_PGM
+                0x00000194       0x46 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000194                digital_pin_to_port_PGM
  .progmem.data.port_to_output_PGM
-                0x000001e8       0x1a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x000001e8                port_to_output_PGM
+                0x000001da       0x1a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000001da                port_to_output_PGM
  .progmem.data.port_to_mode_PGM
-                0x00000202       0x1a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000202                port_to_mode_PGM
-                0x0000021c                . = ALIGN (0x2)
+                0x000001f4       0x1a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000001f4                port_to_mode_PGM
+                0x0000020e                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x0000021c                __ctors_start = .
+                0x0000020e                __ctors_start = .
  *(.ctors)
- .ctors         0x0000021c        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .ctors         0x0000021e        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
-                0x00000220                __ctors_end = .
-                0x00000220                __dtors_start = .
+ .ctors         0x0000020e        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .ctors         0x00000210        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+                0x00000212                __ctors_end = .
+                0x00000212                __dtors_start = .
  *(.dtors)
-                0x00000220                __dtors_end = .
+                0x00000212                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000220        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
-                0x00000220                __init
+ .init0         0x00000212        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
+                0x00000212                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000220       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
+ .init2         0x00000212       0x10 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init2)
  *(.init3)
  *(.init3)
  *(.init4)
- .init4         0x00000230       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
-                0x00000230                __do_copy_data
- .init4         0x0000024a       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
-                0x0000024a                __do_clear_bss
+ .init4         0x00000222       0x1a c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_copy_data.o)
+                0x00000222                __do_copy_data
+ .init4         0x0000023c       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_clear_bss.o)
+                0x0000023c                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
  *(.init6)
- .init6         0x0000025a       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_ctors.o)
-                0x0000025a                __do_global_ctors
+ .init6         0x0000024c       0x1e c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_ctors.o)
+                0x0000024c                __do_global_ctors
  *(.init6)
  *(.init7)
  *(.init7)
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000278        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
+ .init9         0x0000026a        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
  *(.init9)
  *(.text)
- .text          0x0000027c        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
-                0x0000027c                __vector_38
-                0x0000027c                __vector_22
-                0x0000027c                __vector_28
-                0x0000027c                __vector_1
-                0x0000027c                __vector_32
-                0x0000027c                __vector_34
-                0x0000027c                __vector_24
-                0x0000027c                __vector_12
-                0x0000027c                __vector_46
-                0x0000027c                __bad_interrupt
-                0x0000027c                __vector_6
-                0x0000027c                __vector_31
-                0x0000027c                __vector_35
-                0x0000027c                __vector_39
-                0x0000027c                __vector_3
-                0x0000027c                __vector_30
-                0x0000027c                __vector_45
-                0x0000027c                __vector_11
-                0x0000027c                __vector_13
-                0x0000027c                __vector_17
-                0x0000027c                __vector_19
-                0x0000027c                __vector_56
-                0x0000027c                __vector_7
-                0x0000027c                __vector_49
-                0x0000027c                __vector_41
-                0x0000027c                __vector_43
-                0x0000027c                __vector_27
-                0x0000027c                __vector_5
-                0x0000027c                __vector_33
-                0x0000027c                __vector_47
-                0x0000027c                __vector_52
-                0x0000027c                __vector_37
-                0x0000027c                __vector_4
-                0x0000027c                __vector_44
-                0x0000027c                __vector_51
-                0x0000027c                __vector_9
-                0x0000027c                __vector_2
-                0x0000027c                __vector_21
-                0x0000027c                __vector_15
-                0x0000027c                __vector_36
-                0x0000027c                __vector_29
-                0x0000027c                __vector_40
-                0x0000027c                __vector_8
-                0x0000027c                __vector_48
-                0x0000027c                __vector_14
-                0x0000027c                __vector_53
-                0x0000027c                __vector_10
-                0x0000027c                __vector_50
-                0x0000027c                __vector_16
-                0x0000027c                __vector_18
-                0x0000027c                __vector_20
-                0x0000027c                __vector_42
-                0x0000027e                . = ALIGN (0x2)
+ .text          0x0000026e        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
+                0x0000026e                __vector_38
+                0x0000026e                __vector_22
+                0x0000026e                __vector_28
+                0x0000026e                __vector_1
+                0x0000026e                __vector_32
+                0x0000026e                __vector_34
+                0x0000026e                __vector_24
+                0x0000026e                __vector_12
+                0x0000026e                __vector_46
+                0x0000026e                __bad_interrupt
+                0x0000026e                __vector_6
+                0x0000026e                __vector_31
+                0x0000026e                __vector_35
+                0x0000026e                __vector_39
+                0x0000026e                __vector_3
+                0x0000026e                __vector_30
+                0x0000026e                __vector_45
+                0x0000026e                __vector_11
+                0x0000026e                __vector_13
+                0x0000026e                __vector_17
+                0x0000026e                __vector_19
+                0x0000026e                __vector_56
+                0x0000026e                __vector_7
+                0x0000026e                __vector_49
+                0x0000026e                __vector_41
+                0x0000026e                __vector_43
+                0x0000026e                __vector_27
+                0x0000026e                __vector_5
+                0x0000026e                __vector_33
+                0x0000026e                __vector_47
+                0x0000026e                __vector_52
+                0x0000026e                __vector_37
+                0x0000026e                __vector_4
+                0x0000026e                __vector_44
+                0x0000026e                __vector_51
+                0x0000026e                __vector_9
+                0x0000026e                __vector_2
+                0x0000026e                __vector_21
+                0x0000026e                __vector_15
+                0x0000026e                __vector_36
+                0x0000026e                __vector_29
+                0x0000026e                __vector_40
+                0x0000026e                __vector_8
+                0x0000026e                __vector_48
+                0x0000026e                __vector_14
+                0x0000026e                __vector_53
+                0x0000026e                __vector_10
+                0x0000026e                __vector_50
+                0x0000026e                __vector_16
+                0x0000026e                __vector_18
+                0x0000026e                __vector_20
+                0x0000026e                __vector_42
+                0x00000270                . = ALIGN (0x2)
  *(.text.*)
- .text.setup    0x0000027e       0x5a Sketch.o
-                0x0000027e                setup
- .text.loop     0x000002d8      0x112 Sketch.o
-                0x000002d8                loop
+ .text._ZN18BluetoothInterfaceC2Ev
+                0x00000270       0x1c BluetoothInterface.o
+                0x00000270                _ZN18BluetoothInterfaceC1Ev
+                0x00000270                _ZN18BluetoothInterfaceC2Ev
+ .text._ZN18BluetoothInterfaceD2Ev
+                0x0000028c        0x2 BluetoothInterface.o
+                0x0000028c                _ZN18BluetoothInterfaceD2Ev
+                0x0000028c                _ZN18BluetoothInterfaceD1Ev
+ .text._ZN18BluetoothInterface9readInputEv
+                0x0000028e      0x168 BluetoothInterface.o
+                0x0000028e                _ZN18BluetoothInterface9readInputEv
+ .text.setup    0x000003f6       0x3e Sketch.o
+                0x000003f6                setup
+ .text.loop     0x00000434       0x38 Sketch.o
+                0x00000434                loop
  .text._ZN14HardwareSerial9availableEv
-                0x000003ea       0x18 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000003ea                _ZN14HardwareSerial9availableEv
+                0x0000046c       0x18 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000046c                _ZN14HardwareSerial9availableEv
  .text._ZN14HardwareSerial4peekEv
-                0x00000402       0x1c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000402                _ZN14HardwareSerial4peekEv
+                0x00000484       0x1c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000484                _ZN14HardwareSerial4peekEv
  .text._ZN14HardwareSerial4readEv
-                0x0000041e       0x28 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000041e                _ZN14HardwareSerial4readEv
+                0x000004a0       0x28 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000004a0                _ZN14HardwareSerial4readEv
  .text._ZN14HardwareSerial17availableForWriteEv
-                0x00000446       0x1e C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000446                _ZN14HardwareSerial17availableForWriteEv
+                0x000004c8       0x1e C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000004c8                _ZN14HardwareSerial17availableForWriteEv
  .text._Z14serialEventRunv
-                0x00000464       0x76 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x00000464                _Z14serialEventRunv
+                0x000004e6       0x76 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x000004e6                _Z14serialEventRunv
  .text._ZN14HardwareSerial17_tx_udr_empty_irqEv
-                0x000004da       0x42 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000004da                _ZN14HardwareSerial17_tx_udr_empty_irqEv
+                0x0000055c       0x42 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000055c                _ZN14HardwareSerial17_tx_udr_empty_irqEv
  .text._ZN14HardwareSerial5writeEh
-                0x0000051c       0x8c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x0000051c                _ZN14HardwareSerial5writeEh
+                0x0000059e       0x8c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000059e                _ZN14HardwareSerial5writeEh
  .text._ZN14HardwareSerial5flushEv
-                0x000005a8       0x42 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000005a8                _ZN14HardwareSerial5flushEv
+                0x0000062a       0x42 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000062a                _ZN14HardwareSerial5flushEv
  .text._ZN14HardwareSerial5beginEmh
-                0x000005ea       0xc6 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x000005ea                _ZN14HardwareSerial5beginEmh
+                0x0000066c       0xc6 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x0000066c                _ZN14HardwareSerial5beginEmh
  .text.__vector_25
-                0x000006b0       0x6c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x000006b0                __vector_25
+                0x00000732       0x6c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000732                __vector_25
  .text.__vector_26
-                0x0000071c       0x52 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000071c                __vector_26
+                0x0000079e       0x52 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0000079e                __vector_26
  .text._Z17Serial0_availablev
-                0x0000076e       0x12 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x0000076e                _Z17Serial0_availablev
+                0x000007f0       0x12 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x000007f0                _Z17Serial0_availablev
  .text.startup._GLOBAL__sub_I___vector_25
-                0x00000780       0x5a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000802       0x5a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
  .text.__vector_54
-                0x000007da       0x6c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
-                0x000007da                __vector_54
+                0x0000085c       0x6c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+                0x0000085c                __vector_54
  .text.__vector_55
-                0x00000846       0x52 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
-                0x00000846                __vector_55
+                0x000008c8       0x52 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+                0x000008c8                __vector_55
  .text._Z17Serial3_availablev
-                0x00000898       0x12 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
-                0x00000898                _Z17Serial3_availablev
+                0x0000091a       0x12 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+                0x0000091a                _Z17Serial3_availablev
  .text.startup._GLOBAL__sub_I___vector_54
-                0x000008aa       0x5a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+                0x0000092c       0x5a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
  .text.initVariant
-                0x00000904        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
-                0x00000904                initVariant
+                0x00000986        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+                0x00000986                initVariant
  .text.startup.main
-                0x00000906       0x14 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
-                0x00000906                main
+                0x00000988       0x14 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+                0x00000988                main
  .text._ZN5Print5writeEPKhj
-                0x0000091a       0x54 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x0000091a                _ZN5Print5writeEPKhj
+                0x0000099c       0x54 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0000099c                _ZN5Print5writeEPKhj
  .text._ZN5Print5writeEPKc
-                0x0000096e       0x2a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x0000096e                _ZN5Print5writeEPKc
+                0x000009f0       0x2a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x000009f0                _ZN5Print5writeEPKc
  .text._ZN5Print5printEPKc
-                0x00000998        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x00000998                _ZN5Print5printEPKc
+                0x00000a1a        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000a1a                _ZN5Print5printEPKc
  .text._ZN5Print5printEc
-                0x0000099a        0xe C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x0000099a                _ZN5Print5printEc
+                0x00000a1c        0xe C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000a1c                _ZN5Print5printEc
  .text._ZN5Print7printlnEv
-                0x000009a8        0x6 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x000009a8                _ZN5Print7printlnEv
+                0x00000a2a        0x6 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000a2a                _ZN5Print7printlnEv
  .text._ZN5Print7printlnEPKc
-                0x000009ae       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x000009ae                _ZN5Print7printlnEPKc
+                0x00000a30       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000a30                _ZN5Print7printlnEPKc
  .text._ZN5Print7printlnEc
-                0x000009ce       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
-                0x000009ce                _ZN5Print7printlnEc
+                0x00000a50       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000a50                _ZN5Print7printlnEc
+ .text._ZN5Print11printNumberEmh
+                0x00000a70       0x8e C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000a70                _ZN5Print11printNumberEmh
+ .text._ZN5Print5printEli
+                0x00000afe       0x8a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000afe                _ZN5Print5printEli
+ .text._ZN5Print5printEii
+                0x00000b88        0xc C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000b88                _ZN5Print5printEii
+ .text._ZN5Print7printlnEii
+                0x00000b94       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000b94                _ZN5Print7printlnEii
  .text.__vector_23
-                0x000009ee       0x94 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x000009ee                __vector_23
- .text.init     0x00000a82       0xc4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00000a82                init
+                0x00000bb4       0x94 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000bb4                __vector_23
+ .text.micros   0x00000c48       0x4a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000c48                micros
+ .text.delay    0x00000c92       0x72 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000c92                delay
+ .text.init     0x00000d04       0xc4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00000d04                init
  .text.turnOffPWM
-                0x00000b46       0xaa C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
- .text.pinMode  0x00000bf0       0x78 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000bf0                pinMode
+                0x00000dc8       0xaa C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .text.pinMode  0x00000e72       0x78 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000e72                pinMode
  .text.digitalWrite
-                0x00000c68       0x5c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
-                0x00000c68                digitalWrite
+                0x00000eea       0x5c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x00000eea                digitalWrite
+ .text.__empty  0x00000f46        0x2 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+                0x00000f46                yield
  .text.libgcc.div
-                0x00000cc4       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodsi4.o)
-                0x00000cc4                __udivmodsi4
- .text.libgcc   0x00000d08       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
-                0x00000d08                __tablejump2__
-                0x00000d18                . = ALIGN (0x2)
+                0x00000f48       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_udivmodsi4.o)
+                0x00000f48                __udivmodsi4
+ .text.libgcc   0x00000f8c       0x10 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_tablejump2.o)
+                0x00000f8c                __tablejump2__
+                0x00000f9c                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000d18        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
-                0x00000d18                _exit
-                0x00000d18                exit
+ .fini9         0x00000f9c        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+                0x00000f9c                _exit
+                0x00000f9c                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -827,11 +805,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000d18        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
+ .fini0         0x00000f9c        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr6\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000d1c                _etext = .
+                0x00000fa0                _etext = .
 
-.data           0x00800200      0x106 load address 0x00000d1c
+.data           0x00800200      0x10e load address 0x00000fa0
                 0x00800200                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -839,47 +817,46 @@ END GROUP
  *(.rodata)
  *(.rodata*)
  .rodata.str1.1
-                0x00800200       0xe4 Sketch.o
-                                 0xe6 (size before relaxing)
- .rodata._ZTV14HardwareSerial
-                0x008002e4       0x12 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
-                0x008002e4                _ZTV14HardwareSerial
+                0x00800200       0x6f BluetoothInterface.o
  .rodata.str1.1
-                0x008002f6        0xf C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x0080026f       0x7e Sketch.o
+                                 0x80 (size before relaxing)
+ .rodata._ZTV14HardwareSerial
+                0x008002ed       0x12 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x008002ed                _ZTV14HardwareSerial
+ .rodata.str1.1
+                0x008002ff        0xf C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  *(.gnu.linkonce.r*)
-                0x00800306                . = ALIGN (0x2)
- *fill*         0x00800305        0x1 
-                0x00800306                _edata = .
-                0x00800306                PROVIDE (__data_end, .)
+                0x0080030e                . = ALIGN (0x2)
+                0x0080030e                _edata = .
+                0x0080030e                PROVIDE (__data_end, .)
 
-.bss            0x00800306      0x145
-                0x00800306                PROVIDE (__bss_start, .)
+.bss            0x0080030e      0x143
+                0x0080030e                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
- .bss.count     0x00800306        0x2 Sketch.o
-                0x00800306                count
- .bss.Serial    0x00800308       0x9d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
-                0x00800308                Serial
- .bss.Serial3   0x008003a5       0x9d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
-                0x008003a5                Serial3
+ .bss.Serial    0x0080030e       0x9d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x0080030e                Serial
+ .bss.Serial3   0x008003ab       0x9d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+                0x008003ab                Serial3
  .bss.timer0_fract
-                0x00800442        0x1 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00800448        0x1 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .bss.timer0_millis
-                0x00800443        0x4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00800443                timer0_millis
+                0x00800449        0x4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x00800449                timer0_millis
  .bss.timer0_overflow_count
-                0x00800447        0x4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
-                0x00800447                timer0_overflow_count
+                0x0080044d        0x4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x0080044d                timer0_overflow_count
  *(COMMON)
-                0x0080044b                PROVIDE (__bss_end, .)
-                0x00000d1c                __data_load_start = LOADADDR (.data)
-                0x00000e22                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800451                PROVIDE (__bss_end, .)
+                0x00000fa0                __data_load_start = LOADADDR (.data)
+                0x000010ae                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x0080044b        0x0
+.noinit         0x00800451        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x0080044b                _end = .
+                0x00800451                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
@@ -921,8 +898,9 @@ END GROUP
 
 .comment        0x00000000       0x30
  *(.comment)
- .comment       0x00000000       0x30 Sketch.o
+ .comment       0x00000000       0x30 BluetoothInterface.o
                                  0x31 (size before relaxing)
+ .comment       0x00000030       0x31 Sketch.o
  .comment       0x00000030       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
  .comment       0x00000030       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
  .comment       0x00000030       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
@@ -930,6 +908,7 @@ END GROUP
  .comment       0x00000030       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .comment       0x00000030       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
  .comment       0x00000030       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .comment       0x00000030       0x31 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
@@ -951,104 +930,121 @@ END GROUP
 .debug_sfnames
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x2e0
+.debug_aranges  0x00000000      0x350
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x38 Sketch.o
+                0x00000000       0x60 BluetoothInterface.o
  .debug_aranges
-                0x00000038       0x68 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+                0x00000060       0x28 Sketch.o
  .debug_aranges
-                0x000000a0       0x48 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+                0x00000088       0x68 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
  .debug_aranges
-                0x000000e8       0x48 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+                0x000000f0       0x48 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
  .debug_aranges
-                0x00000130       0x30 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+                0x00000138       0x48 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
  .debug_aranges
-                0x00000160      0x100 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+                0x00000180       0x30 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
  .debug_aranges
-                0x00000260       0x48 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+                0x000001b0      0x100 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
  .debug_aranges
-                0x000002a8       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+                0x000002b0       0x48 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_aranges
+                0x000002f8       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_aranges
+                0x00000330       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x9db7
+.debug_info     0x00000000     0xa626
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xbbc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_info    0x00000bbc      0x635 Sketch.o
- .debug_info    0x000011f1     0x1f83 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_info    0x00003174     0x1b74 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_info    0x00004ce8     0x1b7a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
- .debug_info    0x00006862      0x295 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_info    0x00006af7     0x295d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_info    0x00009454      0x329 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_info    0x0000977d      0x63a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x00000bbc      0x8fe BluetoothInterface.o
+ .debug_info    0x000014ba      0x568 Sketch.o
+ .debug_info    0x00001a22     0x1f83 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_info    0x000039a5     0x1b74 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_info    0x00005519     0x1b7a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+ .debug_info    0x00007093      0x295 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_info    0x00007328     0x295d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_info    0x00009c85      0x329 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_info    0x00009fae      0x63a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_info    0x0000a5e8       0x3e C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_abbrev   0x00000000     0x219e
+.debug_abbrev   0x00000000     0x23fc
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0xb1a C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_abbrev  0x00000b1a      0x26f Sketch.o
- .debug_abbrev  0x00000d89      0x432 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_abbrev  0x000011bb      0x3ce C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_abbrev  0x00001589      0x3ce C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
- .debug_abbrev  0x00001957      0x12d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_abbrev  0x00001a84      0x47a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_abbrev  0x00001efe      0x146 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_abbrev  0x00002044      0x15a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x00000b1a      0x290 BluetoothInterface.o
+ .debug_abbrev  0x00000daa      0x213 Sketch.o
+ .debug_abbrev  0x00000fbd      0x432 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_abbrev  0x000013ef      0x3ce C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_abbrev  0x000017bd      0x3ce C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+ .debug_abbrev  0x00001b8b      0x12d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_abbrev  0x00001cb8      0x47a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_abbrev  0x00002132      0x146 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_abbrev  0x00002278      0x15a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_abbrev  0x000023d2       0x2a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_line     0x00000000     0x1bc0
+.debug_line     0x00000000     0x1e8a
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x1f9 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_line    0x000001f9      0x2ff Sketch.o
- .debug_line    0x000004f8      0x489 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_line    0x00000981      0x288 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_line    0x00000c09      0x286 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
- .debug_line    0x00000e8f      0x161 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_line    0x00000ff0      0x681 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_line    0x00001671      0x2cb C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_line    0x0000193c      0x284 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x000001f9      0x37b BluetoothInterface.o
+ .debug_line    0x00000574      0x20d Sketch.o
+ .debug_line    0x00000781      0x489 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_line    0x00000c0a      0x288 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_line    0x00000e92      0x286 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+ .debug_line    0x00001118      0x161 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_line    0x00001279      0x681 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_line    0x000018fa      0x2cb C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_line    0x00001bc5      0x284 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_line    0x00001e49       0x41 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_frame    0x00000000      0x87c
+.debug_frame    0x00000000      0x938
  *(.debug_frame)
- .debug_frame   0x00000000       0x6c Sketch.o
- .debug_frame   0x0000006c      0x110 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_frame   0x0000017c       0xe0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_frame   0x0000025c       0xe0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
- .debug_frame   0x0000033c       0x54 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_frame   0x00000390      0x3ac C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_frame   0x0000073c       0xc4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_frame   0x00000800       0x7c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000000       0xc0 BluetoothInterface.o
+ .debug_frame   0x000000c0       0x44 Sketch.o
+ .debug_frame   0x00000104      0x110 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_frame   0x00000214       0xe0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_frame   0x000002f4       0xe0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+ .debug_frame   0x000003d4       0x54 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_frame   0x00000428      0x3ac C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_frame   0x000007d4       0xc4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_frame   0x00000898       0x7c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_frame   0x00000914       0x24 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
-.debug_str      0x00000000     0x2307
+.debug_str      0x00000000     0x24f0
  *(.debug_str)
  .debug_str     0x00000000      0x3e6 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATmega_DFP/1.2.150/gcc/dev/atmega2560/avr6/crtatmega2560.o
- .debug_str     0x000003e6      0x434 Sketch.o
-                                0x49f (size before relaxing)
- .debug_str     0x0000081a     0x13e4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_str     0x000003e6      0x5d3 BluetoothInterface.o
+                                0x648 (size before relaxing)
+ .debug_str     0x000009b9       0x34 Sketch.o
+                                0x548 (size before relaxing)
+ .debug_str     0x000009ed     0x13e4 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
                                0x1706 (size before relaxing)
- .debug_str     0x00001bfe       0xca C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_str     0x00001dd1       0xca C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
                                0x144a (size before relaxing)
- .debug_str     0x00001cc8       0x47 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+ .debug_str     0x00001e9b       0x47 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
                                0x144b (size before relaxing)
- .debug_str     0x00001d0f       0x37 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_str     0x00001ee2       0x37 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
                                 0x2f6 (size before relaxing)
- .debug_str     0x00001d46      0x390 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_str     0x00001f19      0x390 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
                                0x1284 (size before relaxing)
- .debug_str     0x000020d6      0x16a C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_str     0x000022a9      0x164 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
                                 0x28c (size before relaxing)
- .debug_str     0x00002240       0xc7 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_str     0x0000240d       0xc7 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
                                 0x2f1 (size before relaxing)
+ .debug_str     0x000024d4       0x1c C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
+                                0x181 (size before relaxing)
 
-.debug_loc      0x00000000     0x2e0c
+.debug_loc      0x00000000     0x2f08
  *(.debug_loc)
- .debug_loc     0x00000000      0x1ab Sketch.o
- .debug_loc     0x000001ab      0x482 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_loc     0x0000062d      0x1b0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_loc     0x000007dd      0x1b0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
- .debug_loc     0x0000098d     0x1c87 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_loc     0x00002614      0x28d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_loc     0x000028a1      0x56b C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_loc     0x00000000      0x24a BluetoothInterface.o
+ .debug_loc     0x0000024a       0x5d Sketch.o
+ .debug_loc     0x000002a7      0x482 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_loc     0x00000729      0x1b0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_loc     0x000008d9      0x1b0 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+ .debug_loc     0x00000a89     0x1c87 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_loc     0x00002710      0x28d C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_loc     0x0000299d      0x56b C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -1068,16 +1064,18 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0x290
+.debug_ranges   0x00000000      0x2e0
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x28 Sketch.o
- .debug_ranges  0x00000028       0x58 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
- .debug_ranges  0x00000080       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
- .debug_ranges  0x000000b8       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
- .debug_ranges  0x000000f0       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
- .debug_ranges  0x00000110      0x120 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
- .debug_ranges  0x00000230       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
- .debug_ranges  0x00000268       0x28 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x00000000       0x50 BluetoothInterface.o
+ .debug_ranges  0x00000050       0x18 Sketch.o
+ .debug_ranges  0x00000068       0x58 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial.o)
+ .debug_ranges  0x000000c0       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial0.o)
+ .debug_ranges  0x000000f8       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(HardwareSerial3.o)
+ .debug_ranges  0x00000130       0x20 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(main.o)
+ .debug_ranges  0x00000150      0x120 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(Print.o)
+ .debug_ranges  0x00000270       0x38 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring.o)
+ .debug_ranges  0x000002a8       0x28 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(wiring_digital.o)
+ .debug_ranges  0x000002d0       0x10 C:\Users\henri\Desktop\PROJEK~1\HEXABO~1\BLINK_~1\BLUETO~1\BLUETO~1\ARDUIN~1\Debug\libArduinoCore.a(hooks.o)
 
 .debug_macro
  *(.debug_macro)

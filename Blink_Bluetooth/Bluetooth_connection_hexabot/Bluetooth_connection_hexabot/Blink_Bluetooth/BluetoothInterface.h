@@ -22,6 +22,7 @@ int m_diretionX;
 int m_diretionY;
 int m_diretionZ;
 
+
 protected:
 private:
 
@@ -33,6 +34,7 @@ public:
 	int getDirectionX();
 	int getDirectionY();
 	int getDirectionZ();
+	unsigned char hello();
 	
 	int int2char(char temp);
 	

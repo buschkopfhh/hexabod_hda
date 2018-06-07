@@ -1,20 +1,15 @@
 ﻿/*Begining of Auto generated code by Atmel studio */
 #include <Arduino.h>
 #include <HardwareSerial.h>
-//#include "move.h"
 #include "BluetoothInterface.h"
 
 
 // the setup function runs once when you press reset or power the board
 
 //int count = 0;
-int servoAngle1 = 0;
-int servoAngle2 = 0;
-int servoAngle3 = 0;
-int param = 10;
-int count = 0;
 
 
+/*
 int Angle(char tempappValue)
 {
 	int appValue = (int) tempappValue;
@@ -33,14 +28,12 @@ int int2char(char temp)
 	
 }
 
-
+*/
 void setup() {
 	// initialize digital pin LED_BUILTIN as an output.
-	pinMode(LED_BUILTIN, OUTPUT);
-	pinMode(12, OUTPUT); //also pin 12 as LED output
+	
 
 	Serial.begin(9600);         //Sets the data rate in bits per second (baud) for serial data transmission
-	Serial3.begin(9600);
 	Serial.println("This is the arduino for Hexapod!!!");
 	Serial.println(" ");
 	Serial.println("To connect, start the LED Controller App on your Smartphone");
@@ -123,100 +116,15 @@ void loop() {
 */
 
 	//data = Serial.read();  // Reads the data from the serial port
-	char servo1;
-	char servo2;
-	char servo3;
-	int serv1;
-	int serv2;
-	int serv3;
-	char data;
-
-	int k;
 	
-	if(Serial3.available() > 0){
-		data = Serial3.read();
-// 		Serial.println(data);
-// 		Serial.print("Count: ");
-// 		Serial.println(count);
-		switch (count)
-		{
-			case 0:
-				if(data == 'A'){
-					count++;
-//					Serial.println("data = A");*/
-				}
-				else{
-					Serial.println("Case 0");
-				}
-					
-				break;
-			
-			case 1:
-				if(int2char(data) >= 0 && int2char(data) < 10){
-					servo1 = data;
-					count++;
-					Serial.print("Servo1 = ");
-					Serial.println(servo1);
-				}
-				else{
-					Serial.println("Case 1");
-				}
-				break;
-			case 2:
-				if(data == 'B'){
-					count++;
-// 					Serial.println("data = B");
-				}
-				else{
-					Serial.println("Case 2");
-				}
-				break;
-				
-			case 3:
-				if(int2char(data) >= 0 && int2char(data) < 10){
-					servo2 = data;
-					count++;
-					Serial.print("Servo2 = ");
-					Serial.println(servo2);
-				}
-				else{
-					Serial.println("Case 3");
-				}				break;
-			case 4:
-				if(data == 'C'){
-					count++;
-// 					Serial.println("data = C");
-				}
-				else{
-					Serial.println("Case 4");
-				}
-				break;
-									
-			case 5:
-				if(int2char(data) >= 0 && int2char(data) < 10){
-					servo3 = data;
-					count++;
-					Serial.print("Servo3 = ");
-					Serial.println(servo3);
-				}
-				else{
-					Serial.println("Case 5");
-				}				break;		
-			case 6:
-				if(data == '#'){
-					count = 0;
-					Serial.println("==============");
-				}
-				else{
-					Serial.println("Case 6");
-				}
-				break;
-			default:
-				Serial.println("default");		
+// 	int serv1;
+// 	int serv2;
+// 	int serv3;
+// 	char data;
 		
-		}
+	BluetoothInterface myBluetooth;
 	
-	}
+	myBluetooth.readInput();
 	
 	
 // 	for(k=0;k<7;k++){
