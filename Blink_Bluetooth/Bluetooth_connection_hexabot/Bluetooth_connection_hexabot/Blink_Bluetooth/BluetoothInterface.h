@@ -31,6 +31,7 @@ private:
 public:
 	BluetoothInterface();
 	unsigned char readInput();
+	int sendData();
 	int getDirectionX();
 	int getDirectionY();
 	int getDirectionZ();

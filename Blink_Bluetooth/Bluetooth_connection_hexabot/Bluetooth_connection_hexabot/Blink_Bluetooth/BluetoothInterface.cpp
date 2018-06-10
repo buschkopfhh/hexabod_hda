@@ -33,90 +33,67 @@ unsigned char BluetoothInterface::readInput()
 	
 	if(BluetoothSerial.available() > 0){
 			
-		for(int count = 0; count < 7; count++){		
+		
 			delay(100);		
 			data = BluetoothSerial.read();
-			Serial.println(count);
-			switch (count)
+			delay(100);
+
+			switch (data)
 			{
-				case 0:
-				if(data == 'A'){
-					count++;
-					//					Serial.println("data = A");*/
-				}
-				else{
-					Serial.println("Case 0");
-					count++;			
-					Serial.println(count);
-				}
-				
+				case 'A':
+				servo1 = BluetoothSerial.read();
+				Serial.println("IN A");
+				Serial.println(servo1);
 				break;
 				
-				case 1:
-				if(int2char(data) >= 0 && int2char(data) < 10){
-					servo1 = data;
-					count++;
-					Serial.print("Servo1 = ");
-					Serial.println(servo1);
-				}
-				else{
-					Serial.println("Case 1");
-				}
+				case 'B':
+				servo2 = BluetoothSerial.read();
+				Serial.println("IN b");
+				Serial.println(servo2);
+				
 				break;
-				case 2:
-				if(data == 'B'){
-					count++;
-					// 					Serial.println("data = B");
-				}
-				else{
-					Serial.println("Case 2");
-				}
+				case 'C':
+				servo3 = BluetoothSerial.read();
+				Serial.println("IN c");
+				Serial.println(servo3);
+				
 				break;
 				
-				case 3:
-				if(int2char(data) >= 0 && int2char(data) < 10){
-					servo2 = data;
-					count++;
-					Serial.print("Servo2 = ");
-					Serial.println(servo2);
-				}
-				else{
-					Serial.println("Case 3");
-				}				break;
-				case 4:
-				if(data == 'C'){
-					count++;
-					// 					Serial.println("data = C");
-				}
-				else{
-					Serial.println("Case 4");
-				}
+				case '#':
+				
+				Serial.println("=========");
+								
 				break;
 				
-				case 5:
-				if(int2char(data) >= 0 && int2char(data) < 10){
-					servo3 = data;
-					count++;
-					Serial.print("Servo3 = ");
-					Serial.println(servo3);
-				}
-				else{
-					Serial.println("Case 5");
-				}				break;				
-				case 6:
-				if(data == '#'){
-					count = 0;
-					Serial.println("==============");
-				}
-				else{
-					Serial.println("Case 6");
-				}
-				break;
 				default:
 				Serial.println("default");
-			}
+			
 		}
 			
+	}
+}
+
+int BluetoothInterface::sendData()
+{
+	Serial.println("Now in Loop");
+	if(BluetoothSerial.available ()>0)
+	{
+		Serial.println("BT is available");
+	
+		char buffer_value = BluetoothSerial.read();
+		Serial.println(buffer_value);
+		if(buffer_value == 'a' || buffer_value == 'A')
+		{
+			digitalWrite(13, HIGH);    //Turn ON LED
+			Serial.println("LED ON");  //Arduino Terminal of Desktop
+			BluetoothSerial.println("LED ON"); //Bluetooth Terminal on Mobile
+		}
+		else if(buffer_value == 'b' || buffer_value == 'B')
+		{
+			digitalWrite(13, LOW);      //Turn OFF LED
+			Serial.println("LED OFF");  //Arduino Terminal on Desktop
+			BluetoothSerial.println("LED OFF"); //Bluetooth Terminal on Mobile
+		}
 	}
 }
 

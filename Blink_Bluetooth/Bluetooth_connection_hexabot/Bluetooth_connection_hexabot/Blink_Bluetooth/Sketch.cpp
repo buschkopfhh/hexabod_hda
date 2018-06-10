@@ -4,6 +4,8 @@
 #include "BluetoothInterface.h"
 
 
+#define  BTserial Serial3
+	
 // the setup function runs once when you press reset or power the board
 
 //int count = 0;
@@ -32,13 +34,13 @@ int int2char(char temp)
 void setup() {
 	// initialize digital pin LED_BUILTIN as an output.
 	
-
+	BTserial.begin(9600);
 	Serial.begin(9600);         //Sets the data rate in bits per second (baud) for serial data transmission
 	Serial.println("This is the arduino for Hexapod!!!");
 	Serial.println(" ");
 	Serial.println("To connect, start the LED Controller App on your Smartphone");
 	Serial.println("and connect to Bluetooth HC-05");
-
+	BTserial.println("PRESS A to beginn");
 
 	//int count = 0;
 //	BluetoothInterface to;
@@ -51,7 +53,33 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
 	
+
+
+	//IMPORTANT: The complete String has to be of the Form: 1234,1234,1234,1234;
+
+	//(every Value has to be seperated through a comma (',') and the message has to
+
+	//end with a semikolon (';'))
+
+	BluetoothInterface myBluetooth;
+				
+	//myBluetooth.readInput();
+	myBluetooth.sendData();
 	
+	delay(1000);
+}
+//	BTserial.print("1234");
+	
+
+	//message to the receiving device
+
+
+	
+	
+	
+	
+	
+
 /*	
 	BluetoothInterface to;
 	to.readInput();
@@ -121,10 +149,7 @@ void loop() {
 // 	int serv2;
 // 	int serv3;
 // 	char data;
-		
-	BluetoothInterface myBluetooth;
-	
-	myBluetooth.readInput();
+
 	
 	
 // 	for(k=0;k<7;k++){
@@ -155,7 +180,7 @@ void loop() {
 
 
 
-}
+
 	
   // data = 0;
 	//char type;
